@@ -1,0 +1,15 @@
+<%= form_for @reservation do |r| %>
+  <p>
+    <%= r.label :Room %><br>
+    <%= r.text_field :roomRes %>
+  </p>
+
+  <p>
+    <%= r.label :Date%><br>
+    <%= r.text_field :time %>
+  </p>
+ 
+  <p>
+    <%= r.submit %>
+  </p>
+<% end %>

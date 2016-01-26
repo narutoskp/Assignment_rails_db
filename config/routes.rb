@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
  resources :rooms
  resources :customers
- resources :employees
+ resources :reservations
+ #resources :employees
  
 
   # The priority is based upon order of creation: first created -> highest priority.
