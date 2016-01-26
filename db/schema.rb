@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160126091512) do
+ActiveRecord::Schema.define(version: 20160126104704) do
+
+  create_table "employees", force: :cascade do |t|
+    t.string   "nameEm"
+    t.integer  "reservation_id"
+    t.integer  "room_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "employees", ["reservation_id"], name: "index_employees_on_reservation_id"
+  add_index "employees", ["room_id"], name: "index_employees_on_room_id"
 
   create_table "reservations", force: :cascade do |t|
     t.integer  "roomRes"

@@ -3,5 +3,6 @@
   <strong>Room:</strong>
   <%= @room.room %>
 </p>
-
+	
+<%= link_to 'Add employee', new_room_employee_path(@room) %>
 <%= link_to 'Back', rooms_path %>
