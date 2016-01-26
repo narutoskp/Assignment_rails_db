@@ -1,0 +1,20 @@
+<h1>Check In</h1>
+<%= form_for :room, url: rooms_path do |f| %>
+  <p>
+    <%= f.label :Room %><br>
+    <%= f.text_field :room %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+
+<p>
+	<%= link_to 'Back', rooms_path %>
+</p>
+<p>
+	<%= link_to 'Employees', new_employee_path(@employee) %> 
+</p>

@@ -1,0 +1,18 @@
+<h1>Hotel</h1>
+
+<p>
+	<%= link_to 'Check In', new_room_path(@room) %> 
+</p>
+
+<table>
+  <tr>
+    <th>Rooms</th>
+  </tr>
+ 
+  <% @room.each do |room| %>
+    <tr>
+      <td><%= room.room %></td>
+    </tr>
+  <% end %>
+</table>
+
