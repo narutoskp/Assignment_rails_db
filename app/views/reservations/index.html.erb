@@ -1,0 +1,23 @@
+<p>
+	<%= link_to 'Add Reservation', new_reservation_path(@room) %> 
+</p>
+
+<h2>List Reservation </h2>
+
+<table>
+  <tr>
+    <th>Room</th>
+    <th>Date</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @reservation.each do |reservation| %>
+    <tr>
+      <td><%= reservation.roomRes %></td>
+      <td><%= reservation.time %></td>
+      <td><%= link_to 'Show', reservation_path(reservation) %></td>
+      <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+      <td><%= link_to 'Delete', reservation_path(reservation),method: :delete %></td>
+    </tr>
+  <% end %>
+</table>

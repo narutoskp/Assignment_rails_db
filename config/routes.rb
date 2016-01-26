@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
- resources :rooms
- resources :customers
+ resources :rooms 
  resources :reservations
+ resources :customers
  resources :employees
  
 

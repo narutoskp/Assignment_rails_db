@@ -21,23 +21,3 @@
   <% end %>
 </table>
 
-<br><br>
-<p>
-	<%= link_to 'Reservation', new_reservation_path(@reservation) %> 
-</p>
-
-<table>
-  <tr>
-    <th>Reservation Room</th>
-  </tr>
- 
-  <% @room.each do |room| %>
-    <tr>
-      <td><%= room.room %></td>
-      <td><%= link_to 'Show', room_path(room) %></td>
-      <td><%= link_to 'Edit', edit_room_path(room) %></td>
-      <td><%= link_to 'Delete', room_path(room),method: :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
