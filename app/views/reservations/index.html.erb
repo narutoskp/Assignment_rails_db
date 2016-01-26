@@ -1,8 +1,8 @@
-<p>
-	<%= link_to 'Add Reservation', new_reservation_path(@room) %> 
-</p>
-
 <h2>List Reservation </h2>
+
+<p>
+  <%= link_to 'Add Reservation', new_reservation_path(@room) %> 
+</p>
 
 <table>
   <tr>
@@ -21,3 +21,7 @@
     </tr>
   <% end %>
 </table>
+
+<p>
+  <%= link_to 'Back Home', welcome_index_path(@welcome) %> 
+</p>
