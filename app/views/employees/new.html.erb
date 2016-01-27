@@ -1,4 +1,14 @@
 <h1>Employee</h1>
-<p>
-	<%= link_to 'Rooms', new_room_path(@room) %> 
-</p>
+
+<h2>Add Employee:</h2>
+
+<%= form_for :employee do |a| %>
+  <p>
+    <%= a.label :Name %><br>
+    <%= a.text_field :nameEm %>
+  </p>
+ 
+  <p>
+    <%= a.submit %>
+  </p>
+<% end %>

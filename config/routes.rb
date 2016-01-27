@@ -2,12 +2,13 @@ Rails.application.routes.draw do
 
  
  resources :welcome
+ 
  resources :rooms do
     resources :employees
   end 
- resources :reservations do
-    resources :employees
-  end
+ 
+ resources :reservations
+ 
  resources :customers
  
 
