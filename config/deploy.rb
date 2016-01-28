@@ -2,13 +2,13 @@
 lock '3.4.0'
 
 set :application, 'my_app_name'
-set :repo_url, 'https://github.com/narutoskp/Assignment_rails_db.git'
+set :repo_url, 'git@github.com:narutoskp/Assignment_rails_db.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, '/tmp/deploy/app'
 
 # Default value for :scm is :git
 # set :scm, :git
