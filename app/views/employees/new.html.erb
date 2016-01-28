@@ -2,7 +2,9 @@
 
 <h2>Add Employee:</h2>
 
-<%= form_for :employee do |a| %>
+<% @room = Room.create %>
+<% @employee = Employee.new %>
+<%= form_for [@room, @employee] do |a| %>
   <p>
     <%= a.label :Name %><br>
     <%= a.text_field :nameEm %>

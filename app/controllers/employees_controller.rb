@@ -10,12 +10,12 @@ class EmployeesController < ApplicationController
 
   def create
     @room = Room.find(params[:room_id])
-    @employee = @room.Employee.new(employee_params)
+    @employee = @room.employees.create(employee_params)
     redirect_to room_path(@room)
   end
  
   private
     def employee_params
-      params.require(:employees).permit(:nameEm)
+      params.require(:employee).permit(:nameEm)
     end
 end
